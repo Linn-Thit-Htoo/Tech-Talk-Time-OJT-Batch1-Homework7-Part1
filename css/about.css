@@ -1,0 +1,112 @@
+/* ====== About Us ====== */
+#about {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 70px 0 110px;
+}
+
+.about {
+    text-align: center;
+    max-width: 450px;
+    margin: auto;
+}
+.about h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+/* ====== About Tours ====== */
+.about-tours {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    padding: 70px 0;
+}
+.about-tours .about-tours-img {
+    background-image: url('../images/slider-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    grid-column: 1 / span 7;
+    border-radius: 20px;
+}
+.about-tours .about-tours-content {
+    grid-column: span 5;
+    /* max-width: 600px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.about-tours-content h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--secondary);
+    margin-bottom: 20px;
+}
+.about-tours-content p {
+    margin-bottom: 20px;
+}
+
+.tours-list-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.tours-list-group .tours-list {
+    list-style-type: circle;
+}
+.tours-list .tour-list-item {
+    position: relative;
+    left: 15px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+/* ====== Team ====== */
+#team {
+    padding: 100px 0;
+}
+
+.team {
+    max-width: 550px;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+.team-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.team-group-member img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 13px;
+}
+.team-group-member .member-info {
+    padding: 0 20px;
+}
+.team-group-member h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+
+
+/* ====== Responsive ====== */
+@media screen and (max-width: 992px) {
+/* ====== About Tours ====== */
+    .about-tours{
+        display: block;
+    }
+    .about-tours .about-tours-img {
+        height: 500px;
+        margin-bottom: 20px;
+    }
+
+/* ====== Team ====== */
+    .team-group{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+    }
+}
